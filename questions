@@ -1,0 +1,142 @@
+A quels droits correspondent les entiers 751; 521; 214 et 150 ?
+Par quels entiers sont codes les droits rw-r- -r- - et rwxr-xr-x ?
+Comment lister les porcessus de l’utilisateur root
+Comment afficher l’arborescence des processus ?
+Comment arrêter un processus
+Comment voir les processus en temps réel
+Quelle commande est utilisée pour amener le processus d’arrière-plan au premier plan?
+Quelle commande est utilisée pour amener le processus d’arrière-plan au premier plan?
+Si un programme s’exécutant en arrière-plan tente de lire depuis STDIN
+
+Les informations d’un processus dans le shell courant peuvent être obtenues en utilisant
+
+Quelle commande peut être exécutée par un utilisateur qui est déjà connecté au système, afin de passer à l’utilisateur root
+
+Quel signal est envoyé par la commande « kill -9 »
+
+Nous pouvons changer la priorité d’un processus en cours d’exécution en utilisant ?
+
+ Le signal envoyé à un processus lorsque la touche « Ctrl-C » est enfoncée est 
+
+ La commande « nohup » est utilisé pour ? (continuer le processus après la déconnexion)
+
+Si un fichier a les permissions suivantes 764,que peut faire un utilisateur lambda ?
+
+Quelle est la représentation octale de ces permissions -rwx r-x r– ?
+
+ Les permissions -rwxr–-r–- représentées par la valeur octale ?
+
+Quelle est la commande pour accorder la permission d’exécution sur tous les fichiers et sous-répertoires de « /home/document/mydirectory »
+
+Si la valeur « umask » est « 0002 ». Quelles seront les permissions du nouveau répertoire creés 
+
+10. Un utilisateur effectue une opération chmod sur un fichier. Lequel des énoncés suivants est vrai?
+A La date d’accès au fichier est mise à jour
+B La date de modification du fichier est mise à jour
+C La date de changement du fichier est mise à jour
+D Aucun de ces réponses
+
+Quelle commande est utilisée pour attribuer le droit de lecture-écriture au propriétaire du fichier?
+A chmod a+r file
+B chmod o+r file
+C chmod u=rw file
+D chmod og-r file
+
+Avec la valeur umask de 112, quelle est la permission par défaut attribuée à un fichier nouvellement créé?
+A -x-x-wx
+B -rw-rw-r-
+C -r-xr-x-r-
+D -rw-rw-r-x
+
+La commande suivante :
+$ chmod o-w myfile
+A définit la permission d’écriture pour « owner »
+B définit la permission d’écriture pour « others »
+C efface la permission d’écriture pour « others »
+D efface les permissions d’écriture
+
+Laquelle de ces commandes va définir les permissions sur le fichier « myfile »: lire et écrire pour le propriétaire(user), lire pour le groupe(group) et rien pour autres(others)?
+A 
+$ chmod 046 myfile
+B 
+$ chmod 640 myfile
+C 
+$ chmod 310 myfile
+D 
+$ chmod rw rw myfile
+
+
+Si vous êtes un utilisateur root, comment pouvez-vous autoriser l’exécution uniquement pour le propriétaire du fichier « myfile »?
+A 
+$ chmod +x myfile
+B 
+$ chmod u+x myfile
+C 
+$ chmod a+x myfile
+D 
+$ chmod U+X myfile
+
+ Un utilisateur exécute la commande suivante :
+$ chmod + x myfile.txt
+Lequel des énoncés suivants est vrai pour la sortie de cette commande?
+A La commande entraîne l’ajout d’une permission d’exécution à l’utilisateur qui a exécuté cette commande
+B La commande entraîne l’ajout d’une permission d’exécution pour le propriétaire du fichier
+C La commande entraîne une erreur car le fichier n’est pas un fichier exécutable
+D La commande entraîne l’ajout d’une permission d’exécution pour tous (utilisateur, groupe et autres)
+
+Lesquels des paramètres de la commande umask autorisent le droit de l’exécution par défaut sur les fichiers réguliers nouvellement créées?
+A 222
+B 111
+C 000
+D Aucun de ces réponses
+
+Note :
+umask par défaut est 022 donc
+	les permissions pour les répertoires nouvellement créés : rwxr-xr-x.
+	les permissions pour les fichiers nouvellement créés : -rw-r-r–.
+Par défaut, la permission d’exécution est désactivée pour les fichiers réguliers.
+
+
+Quelle commande est utilisée pour modifier les autorisations des fichiers et des répertoires?
+A mv
+B chgrp
+C chmod
+D set
+
+Lequel des énoncés suivants est vrai?
+A La commande $cp conservera les métadonnées du fichier
+B La commande $sort trie par défaut dans l’ordre numérique
+C La commande $mv conservera les métadonnées du fichier
+D La commande $ps affichera l’utilisation du système de fichiers
+
+Note :
+La commande $mv ne copie aucun contenu de fichier, mais uniquement les métadonnées du système de fichiers sur le fichier en fonction de son nom et de son emplacement, alors que la commande $cp crée une copie séparée du fichier, ce qui prend beaucoup plus de temps car il doit lire complètement le premier fichier et écrire son contenu dans un autre fichier. 
+La commande $sort est utilisée pour trier un fichier, en organisant les enregistrements dans un ordre particulier. Par défaut, la commande de tri trie le fichier en supposant que le contenu est en ASCII. En utilisant des options dans la commande de tri, il peut également être utilisé pour trier numériquement.
+La commande $ps sous linux permet d’afficher les processus exécutés sur le système. Il fournit un instantané des processus actuels avec des informations détaillées telles que l’ID utilisateur, l’utilisation du processeur, l’utilisation de la mémoire, le nom de la commande, etc.
+
+
+Quelle commande UNIX est utilisée pour mettre à jour l’heure de modification d’un fichier?
+A time
+B modify
+C cat
+D touch
+
+ Supprimer un lien symbolique c’est-à-dire …
+A Supprime le fichier de destination
+B Supprime à la fois le lien symbolique et le fichier de destination
+C Supprime uniquement le lien symbolique
+D la sauvegarde de la destination est automatiquement créée
+
+Tout fichier possède?
+A Le noms et sa tailles
+B Le noms et son numéros d’inode
+C Le noms et son adresse
+D Le noms et les autorisations
+
+
+
+Les fichiers binaires ou exécutables sont des … ?
+A Fichiers réguliers
+B Fichiers de périphériques
+C Dossiers spéciaux
+D Fichiers d’annuaire
